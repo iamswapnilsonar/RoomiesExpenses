@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_monthly_expenses"
+            android:icon="@mipmap/ic_add_expenses"
+            android:title="@string/monthly_expenses" />
+        <item
+            android:id="@+id/nav_expense_charts"
+            android:icon="@mipmap/ic_pie_chart"
+            android:title="@string/expense_charts" />
+        <item
+            android:id="@+id/nav_generated_bills"
+            android:icon="@mipmap/ic_generated_bills"
+            android:title="@string/generated_bills" />
+        <item
+            android:id="@+id/nav_backups"
+            android:icon="@mipmap/ic_backups"
+            android:title="@string/backups" />
+        <item
+            android:id="@+id/nav_add_month"
+            android:icon="@mipmap/ic_add_month"
+            android:title="@string/add_month" />
+        <item
+            android:id="@+id/nav_add_roommate"
+            android:icon="@mipmap/ic_add_member"
+            android:title="@string/add_roommate" />
+        <item
+            android:id="@+id/nav_accounts"
+            android:icon="@mipmap/ic_accounts"
+            android:title="@string/accounts" />
+    </group>
+
+    <item android:title="Communicate" android:enabled="false" />
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/nav_like"
+            android:icon="@drawable/ic_thumb_up_black_24dp"
+            android:title="@string/like" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@mipmap/ic_exit"
+            android:title="@string/exit" />
+    </group>
+</menu>

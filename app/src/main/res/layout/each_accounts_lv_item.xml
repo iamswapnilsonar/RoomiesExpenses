@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_medium">
+
+    <np.TextView
+        style="@style/AppTheme.TextGearedSlab"
+        android:id="@+id/txtAcHoldersName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/text_medium"
+        android:text="Ac Holders Name"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small" />
+    <np.TextView
+        style="@style/AppTheme.TextGearedSlab"
+        android:id="@+id/txtAcBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtAcHoldersName"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        android:text="Bank Name"
+        android:layout_marginLeft="@dimen/margin_small" />
+
+    <np.TextView
+        style="@style/AppTheme.TextGearedSlab"
+        android:id="@+id/txtAcBranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtAcHoldersName"
+        android:textSize="@dimen/text_small"
+        android:layout_toRightOf="@id/txtAcBank"
+        android:text="(Branch)"
+        android:layout_marginLeft="@dimen/margin_small"  />
+
+    <np.TextView
+        style="@style/AppTheme.TextGearedSlab"
+        android:id="@+id/txtAcNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtAcBank"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        android:text="Ac Number"
+        android:layout_marginLeft="@dimen/margin_small" />
+
+    <np.TextView
+        style="@style/AppTheme.TextGearedSlab"
+        android:id="@+id/txtAcIfscCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtAcBank"
+        android:textSize="@dimen/text_small"
+        android:layout_toRightOf="@id/txtAcNumber"
+        android:text="(IFSC Code)"
+        android:layout_marginLeft="@dimen/margin_small"  />
+
+    <np.TextView
+        style="@style/AppTheme.TextGearedSlab"
+        android:id="@+id/txtCreatedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:layout_below="@+id/txtAcNumber"
+        android:textSize="@dimen/text_very_small"
+        android:layout_alignParentRight="true"
+        android:text="Created On"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small" />
+
+    <np.TextView
+        style="@style/AppTheme.TextGearedSlab"
+        android:id="@+id/txtIsActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_small"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:text="Active"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small" />
+</RelativeLayout>

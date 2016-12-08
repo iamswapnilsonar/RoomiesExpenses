@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nav_drawer_items">
+        <item>@string/monthly_expenses</item>
+        <item>@string/expense_charts</item>
+        <item>@string/generated_bills</item>
+        <item>@string/backups</item>
+        <item>@string/add_month</item>
+        <item>@string/add_roommate</item>
+        <item>@string/accounts</item>
+        <item>@string/share</item>
+        <item>@string/like</item>
+        <item>@string/exit</item>
+    </string-array>
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@mipmap/ic_add_expenses</item>
+        <item>@mipmap/ic_pie_chart</item>
+        <item>@mipmap/ic_generated_bills</item>
+        <item>@mipmap/ic_backups</item>
+        <item>@mipmap/ic_add_month</item>
+        <item>@mipmap/ic_add_member</item>
+        <item>@mipmap/ic_accounts</item>
+        <item>@drawable/ic_menu_share</item>
+        <item>@drawable/ic_thumb_up_black_24dp</item>
+        <item>@mipmap/ic_exit</item>
+    </array>
+</resources>

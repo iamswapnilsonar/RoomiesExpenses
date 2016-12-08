@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<np.TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="@style/AppTheme.TextGearedSlab"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_very_small"
+    android:textSize="@dimen/text_small"
+    android:paddingLeft="@dimen/padding_medium"
+    android:paddingRight="@dimen/padding_medium"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:ellipsize="marquee"
+    android:textAlignment="inherit"/>

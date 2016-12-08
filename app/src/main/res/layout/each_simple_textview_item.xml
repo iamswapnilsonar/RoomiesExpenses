@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@id/imgFileIcon"
+    android:paddingRight="@dimen/padding_xlarge"
+    android:padding="@dimen/margin_xlarge"
+    android:text="File Name"
+    android:textColor="@color/black"
+    android:textSize="@dimen/text_medium"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

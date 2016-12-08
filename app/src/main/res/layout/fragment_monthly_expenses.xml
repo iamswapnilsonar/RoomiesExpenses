@@ -1,0 +1,253 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="com.harshal.roomiesexpenses.fragments.MonthlyExpensesFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/default_screen_bg">
+
+        <LinearLayout
+            android:id="@+id/linLayMainInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/my_sky_blue"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Spinner
+                    android:id="@+id/spinnerMonths"
+                    android:layout_width="wrap_content"
+                    style="@style/SpinnerHeader"
+                    android:layout_height="@dimen/height_very_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayAddExpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <np.EditText
+                            style="@style/AppTheme.OswaldRegular"
+                            android:id="@+id/edtExpName"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_small"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:hint="*Expense Name"
+                            android:inputType="textCapWords" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <np.EditText
+                            style="@style/AppTheme.OswaldRegular"
+                            android:id="@+id/edtExpAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_small"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:hint="*Amount Spend"
+                            android:inputType="numberDecimal" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <np.TextView
+                        style="@style/AppTheme.TextGearedSlab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:textSize="@dimen/text_small"
+                        android:textColor="@color/black"
+                        android:text="Paid By :->" />
+
+                    <Spinner
+                        android:id="@+id/spinnerPaidBy"
+                        android:layout_width="match_parent"
+                        style="@style/SpinnerNormal"
+                        android:layout_height="@dimen/height_small" />
+
+                    <np.Button
+                        style="@style/AppTheme.TextGearedSlab"
+                        android:id="@+id/btnAddExpense"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_small"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@drawable/button_selector"
+                        android:textSize="@dimen/text_small"
+                        android:textColor="@color/white"
+                        android:text="Add Expense" />
+
+                    <np.Button
+                        style="@style/AppTheme.TextGearedSlab"
+                        android:id="@+id/btnCancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_small"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:background="@drawable/button_selector"
+                        android:textSize="@dimen/text_small"
+                        android:textColor="@color/white"
+                        android:text="Cancel" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <np.TextView
+                        style="@style/AppTheme.TextGearedSlab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:textSize="@dimen/text_small"
+                        android:textColor="@color/black"
+                        android:text="Shared By :->" />
+
+                    <ListView
+                        android:id="@+id/listViewSharedMembers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></ListView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="600dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/my_sky_blue"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_medium">
+
+                        <np.TextView
+                            style="@style/AppTheme.TextGearedSlab"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:text="SrNo"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_small"
+                            android:textStyle="bold" />
+
+                        <np.TextView
+                            style="@style/AppTheme.TextGearedSlab"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Expense"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_small"
+                            android:textStyle="bold" />
+
+                        <np.TextView
+                            style="@style/AppTheme.TextGearedSlab"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Amount"
+                            android:textSize="@dimen/text_small"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <np.TextView
+                            style="@style/AppTheme.TextGearedSlab"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Paid By"
+                            android:textSize="@dimen/text_small"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <np.TextView
+                            style="@style/AppTheme.TextGearedSlab"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center"
+                            android:text="Shared By"
+                            android:textSize="@dimen/text_small"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <np.TextView
+                            style="@style/AppTheme.TextGearedSlab"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center"
+                            android:text="Created On"
+                            android:textSize="@dimen/text_small"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/listViewExpenses"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></ListView>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/fabAddExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_fab_action_add"
+            fab:fab_colorNormal="@color/accent"
+            fab:fab_colorPressed="@color/accent_pressed"
+            fab:fab_colorRipple="@color/ripple" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            android:layout_width="@dimen/height_xlarge"
+            android:layout_height="@dimen/height_xlarge"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/margin_large"
+            android:visibility="gone" />
+    </RelativeLayout>
+</FrameLayout>

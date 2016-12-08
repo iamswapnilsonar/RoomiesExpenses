@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="com.harshal.roomiesexpenses.fragments.MonthlyExpensesFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/default_screen_bg">
+
+        <LinearLayout
+            android:id="@+id/linLayMainInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/my_sky_blue"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Spinner
+                    android:id="@+id/spinnerMonths"
+                    android:layout_width="wrap_content"
+                    style="@style/SpinnerHeader"
+                    android:layout_height="@dimen/height_very_small" />
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChartMonths"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChartExpense"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            android:layout_width="@dimen/height_xlarge"
+            android:layout_height="@dimen/height_xlarge"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/margin_large"
+            android:visibility="gone" />
+    </RelativeLayout>
+</FrameLayout>

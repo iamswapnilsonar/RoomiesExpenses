@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Roomies Expenses</string>
+    <string name="monthly_expenses">Monthly Expenses</string>
+    <string name="expense_charts">Expense Charts</string>
+    <string name="generated_bills">Generated Bills</string>
+    <string name="backups">Backups</string>
+    <string name="add_month">Add Month</string>
+    <string name="add_roommate">Add Roommate</string>
+    <string name="accounts">Accounts</string>
+    <string name="share">Share</string>
+    <string name="like">Like</string>
+    <string name="exit">Exit</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_create_backup">Create Backup</string>
+    <string name="menu_generate_bills">Generate Bills For This Month</string>
+    <string name="menu_share_chart">Share This Expense Chart</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share_using">Share Using...</string>
+    <string name="app_url">https://play.google.com/store/apps/details?id=com.harshal.roomiesexpenses</string>
+
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="ok">OK</string>
+
+    <string name="note">Note : You can transfer your remaining amount by internet banking directly on following account -></string>
+
+    <!-- Account info headers-->
+    <string name="ac_holders_name">Ac Holders Name</string>
+    <string name="bank">Bank</string>
+    <string name="branch">Branch</string>
+    <string name="ac_number">Ac Number</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="happy_message">Be Happy... Keep Smiling...</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

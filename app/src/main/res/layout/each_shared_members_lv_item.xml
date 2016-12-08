@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/height_xlarge"
+        android:layout_height="@dimen/height_xlarge"
+        android:src="@mipmap/ic_add_member"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin_small"
+        android:id="@+id/imgPicture" />
+
+    <np.TextView
+        style="@style/AppTheme.TextGearedSlab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small"
+        android:layout_toRightOf="@+id/imgPicture"
+        android:layout_below="@+id/checkBoxAddMember"
+        android:layout_margin="@dimen/margin_small"
+        android:id="@+id/txtName" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/checkBoxAddMember" />
+</RelativeLayout>

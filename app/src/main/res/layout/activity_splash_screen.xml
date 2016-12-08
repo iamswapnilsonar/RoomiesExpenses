@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context="com.harshal.roomiesexpenses.SplashScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_image"
+            android:layout_margin="@dimen/padding_large"/>
+        <np.TextView
+            style="@style/AppTheme.TextGearedSlab"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome To"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_large" />
+
+        <np.TextView
+            style="@style/AppTheme.OswaldRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roomies Expenses"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_xlarge" />
+
+    </LinearLayout>
+</RelativeLayout>
